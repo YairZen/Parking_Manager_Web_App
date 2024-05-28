@@ -1,0 +1,203 @@
+/* style_login_page.css */
+body {
+    background-image: url(light_parking.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow: 2px 2px 4px white;
+    font-family: Arial, Helvetica, sans-serif; /*Text's font*/
+    color: black; /*Text's color*/
+    margin: 0; /*No space around elements*/
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+  margin: 0 auto; /* Center the table both horizontally and vertically */
+  margin-top: 50px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: black;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: antiquewhite;
+        border-radius: 10rem;
+        z-index: -2;
+}
+
+.btn:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: white;
+        border-color: white;
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+}
+
+.btn:hover {
+        color: black;
+}
+
+.btn:hover:before {
+            width: 100%;
+            border-color: white;
+}
+
+input {
+  border-style: inset;
+  padding: 8px;
+  font-size: 12px;
+}
+
+#change_button {
+    border-color: transparent; /*No border color*/
+    border-radius: 5px; /*Rounded image*/
+    color: white; /*Text colored white*/
+    padding: 10px; /*Creates space around an element*/
+    cursor: pointer; /*Mouse's cursor of the type pointer*/
+    margin: 0 auto; /* Center the table both horizontally and vertically */
+    margin-top: 30px;
+    background-color: black;
+    box-shadow: 2px 2px dimgrey, 4px 4px darkgrey;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    float: right;
+    height: 35px;
+    margin: 0px 50px 0px 0px;
+    color: black;
+    text-align: right;
+    padding: 10px 30px;
+}
+/*
+.screen {
+  background-color: #9fe9fc;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.road {
+  position: relative;
+  background-color: #444;
+  height: 150px;
+  width: 100%;
+  top: 100px;
+  overflow: hidden;
+}
+
+.strip {
+  position: absolute;
+  background-color: #fff;
+  height: 10px;
+  width: 100px;
+  top: 50%;
+  margin-top: -5px;
+}
+
+.strip1 {left: 800px; animation: stipRun1 60s linear infinite;} 
+.strip2 {right: 0; animation: stipRun2 60s linear infinite;} 
+@keyframes stipRun1 {
+  10%{left: 400px;}
+  25%{left: 0;}
+  26%{left: auto;right:0;}
+  50%{left: auto; right: 400px;}
+  75%{left: auto; right: 800px;}
+  100%{left: auto; right: 1600px;}
+}
+
+ @keyframes stipRun2 {
+  25%{right: 400px;}
+  50%{right: 800px;}
+  75%{right: 1200px;}
+  100%{right:2000px;}
+} 
+
+.car-wrap {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  animation: car 20s linear infinite;
+}
+
+@keyframes car {
+  0% {left: 10px;}
+  10% {left: 10%;}
+  20% {left: 20%;}
+  30% {left: 30%;}
+  40% {left: 40%;}
+  50% {left: 50%;}
+  60% {left: 60%;}
+  70% {left: 70%;}
+  80% {left: 80%;}
+  90% {left: 90%;}
+  100% {left: 100%;}
+}
+
+.car-red {
+  height: 20px;
+  width: 70px;
+  background-color: #ff2c2c;
+  border-radius: 1px 50px 1px 1px;
+}
+
+.window {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  height: 12px;
+  width: 16px;
+  opacity: .65;
+  background-color: #587899;
+  border-radius: 0 10px 0 0;
+}
+
+.wheel {
+  position: absolute;
+  bottom: -9px;
+  right: 10px;
+  border: 5px solid #111;
+  background-color: #ddd;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+
+.bck-wheel {
+  position: absolute;
+  bottom: -9px;
+  left: 5px;
+  border: 5px solid #111;
+  background-color: #ddd;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+*/

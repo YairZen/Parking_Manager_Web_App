@@ -1,0 +1,69 @@
+<!--Out_first_website.html-->
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link id="style_sheet_admin" rel="stylesheet" href="admin_light_style.css">
+    <!-- *************************-->
+    <script src="layer4F.js"></script>
+    <script src="layer2F.js"></script>
+    <script src="layer3F.js"></script>
+    <link rel="alternate" href="AdminWebsite.html">
+	<!-- *************************-->
+    	<!-- <script src="Logic.js"></script>-->
+	    <!-- <script src="Storage.js"></script>-->
+    <title>Braude College Parking Reservation</title>
+</head>
+
+<body>
+    <button id="change_button" type="button" value="mode" onclick="changeModeAdmin()">Light/Dark mode</button>
+    <h1>Braude College Parking Reservation</h1>
+    <table>
+        <tr>
+            <th>
+                <table id="table1">
+                    <form>
+                    <tr>
+                        <th><h2>Admin Management Page</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Student ID: <input type="text" id="studentID" name="studentID"></th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <button id="remove_button" type="button" value="remove" onclick="FuncCheckout()">Remove Reservation</button>&nbsp
+                            <button id="clean_button" type="button" value="cleanForm" onclick="cleanFormAdmin()">Clear Form</button>&nbsp
+                            <button id="show_button" type="button" value="getAllStudents" onclick="FuncShowData()">Show All</button>&nbsp
+                            <button id="delete_button" type="button" value="delAll" onclick="FuncDelAll()">Delete All</button>&nbsp
+                        </th>
+                    </tr>
+                    </form>
+                </table>
+            </th>
+        </tr>
+    </table>
+
+<!--border of the specific table-->
+<table id ="table2">
+		<tr>
+			<th colspan="4" class="table2"><h2>Reservations</h2></th>
+		</tr>
+		<tr>
+			<th class="table2">ID</th>
+			<th class="table2">Student Name</th>
+			<th class="table2">Car ID</th>
+			<th class="table2">Parking Lot</th>
+		</tr>
+			<tbody id="tableBody"></tbody>
+</table>
+
+
+	<footer>
+		<!-- © = &copy-->
+		<p>&copy 2024 Braude College Parking Reservation</p>
+	</footer>
+
+</body>
+
+</html>

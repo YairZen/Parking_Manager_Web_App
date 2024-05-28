@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Braude College Parking Reservation</title>
+	<script src="layer4F.js"></script>
+	<script src="layer2F.js"></script>
+	<script src="layer3F.js"></script>
+
+    <link id="style_sheet_login" rel="stylesheet" href="login_light_style.css">
+    <link rel="alternate" href="AdminWebsite.html">
+    <link rel="alternate" href="StudentWebsite.html">
+</head>
+<body>
+    <button id="change_button" type="button" value="mode" onclick="changeModeLogin()">Light/Dark mode</button>
+    <h1>Welcome To Braude College Parking Reservation</h1>
+    <table>
+        <form>
+        <tr>
+            <th>Admin Password:</th>
+            <td>
+                <input type="password" id="Admin_Pass" name="AdminPass">
+                <!-- An element to toggle between password visibility -->
+                <input type="checkbox" id="show_Pass" onclick="showPass()">Show Password
+            </td>
+        </tr>
+        </form>
+    </table>
+    <table>
+        <tr>
+            <th>
+                <button id="admin_button" class="btn" type="submit" onclick="adminPage()">Admin Management</button>&nbsp
+                <button id="student_button" class="btn" type="submit" onclick="handleStudentLogin()">Student Reservation</button>&nbsp
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

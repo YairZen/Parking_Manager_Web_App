@@ -1,0 +1,197 @@
+/* style.css */
+
+/* Base styles */
+body {
+  font-family: Arial, sans-serif; /* Specify a fallback font */
+  background: #9fe9fc;
+  color: white;
+  margin: 0;
+  }
+
+
+/* Header */
+header {
+  display: flex; /* Allow all parts to be in sequence */
+  align-items: center; /* Align the items to the center */
+  justify-content: center; /* Align the content to the center */
+  color: white;
+  text-align: center; /* Align the text to the center */
+  padding: 10px 10px; /* Create space around an element's content - 10 pixel */
+  overflow: hidden;
+  background-color: #444;
+}
+
+/* Table */
+#tableLogin {
+  margin: 0 auto; /* Center the table both horizontally and vertically */
+  margin-top: 50px;
+}
+
+/* Buttons */
+.btn {
+  margin: 0 auto;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+  left:750px;
+  top:30px;
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: white;
+  border-color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #444;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  border-color: white;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.btn:hover {
+  color: black;
+}
+.btn:hover:before {
+  width: 100%;
+  border-color: white;
+
+}
+
+
+/* Specific button style */
+#send_button {
+  background-color: blue;
+  box-shadow: 2px 2px #28a428, 4px 4px #5bd75b;
+}
+
+/* Input and select elements */
+input,
+select {
+  border-style: inset;
+  padding: 8px;
+  font-size: 12px;
+  
+}
+
+
+.screen {
+  background-color: #9fe9fc;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.road {
+  position: relative;
+  background-color: #444;
+  height: 150px;
+  width: 100%;
+  top: 100px;
+  overflow: hidden;
+}
+.strip {
+  position: absolute;
+  background-color: #fff;
+  height: 10px;
+  width: 100px;
+  top: 50%;
+  margin-top: -5px;
+}
+.strip1 {left: 800px; animation: stipRun1 60s linear infinite;} 
+.strip2 {right: 0; animation: stipRun2 60s linear infinite;} 
+@keyframes stipRun1 {
+  10%{left: 400px;}
+  25%{left: 0;}
+  26%{left: auto;right:0;}
+  50%{left: auto; right: 400px;}
+  75%{left: auto; right: 800px;}
+  100%{left: auto; right: 1600px;}
+}
+ @keyframes stipRun2 {
+  25%{right: 400px;}
+  50%{right: 800px;}
+  75%{right: 1200px;}
+  100%{right:2000px;}
+} 
+.car-wrap {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  animation: car 20s linear infinite;
+}
+@keyframes car {
+  0% {left: 10px;}
+  10% {left: 10%;}
+  20% {left: 20%;}
+  30% {left: 30%;}
+  40% {left: 40%;}
+  50% {left: 50%;}
+  60% {left: 60%;}
+  70% {left: 70%;}
+  80% {left: 80%;}
+  90% {left: 90%;}
+  100% {left: 100%;}
+}
+
+.car-red {
+  height: 20px;
+  width: 70px;
+  background-color: #ff2c2c;
+  border-radius: 1px 50px 1px 1px;
+}
+
+.window {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+  height: 12px;
+  width: 16px;
+  opacity: .65;
+  background-color: #587899;
+  border-radius: 0 10px 0 0;
+}
+
+.wheel {
+  position: absolute;
+  bottom: -9px;
+  right: 10px;
+  border: 5px solid #111;
+  background-color: #ddd;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+.bck-wheel {
+  position: absolute;
+  bottom: -9px;
+  left: 5px;
+  border: 5px solid #111;
+  background-color: #ddd;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+}
+

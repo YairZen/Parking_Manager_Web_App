@@ -1,0 +1,90 @@
+<!--student_website.html-->
+<!DOCTYPE html>
+<html>
+<head>
+	<link id="style_sheet_student" rel="stylesheet" href="student_light_style.css">
+	<!-- *************************-->
+	<script src="layer4F.js"></script>
+	<script src="layer2F.js"></script>
+	<script src="layer3F.js"></script>
+
+	<!-- *************************-->
+	<!-- <script src="Logic.js"></script>-->
+	<!-- <script src="Storage.js"></script>-->
+	<title>Braude College Parking Reservation</title>
+</head>
+
+<body>
+	<button id="change_button" type="button" value="mode" onclick="changeModeStudent()">Light/Dark mode</button>
+	<h1>Braude College Parking Reservation</h1>
+	<table>
+		<tr>
+			<th>
+				<table id="table1">
+					<form>
+					<tr>
+						<th colspan="2"><h2>Reservation Form</h2></th>
+					</tr>
+					<tr>
+						<th class="instruction">Student ID: <br /><input type="text" id="studentID" name="studentID"></th>
+						<th class="instruction">Car ID: <br /><input type="text" id="CarId" name="CarId"></th>
+					</tr>
+					<tr>
+						<th class="instruction">First Name: <br /><input type="text" id="FirstName" name="FirstName"></th>
+						<th class="instruction">Last Name: <br /><input type="text" id="LastName" name="LastName"></th>
+					</tr>
+					<tr>
+						<th class="instruction">
+							Select Parking Lot: <br/><select id="parkingLot" name="parkingLot">
+								<option value="lotA">Lot A</option>
+								<option value="lotB">Lot B</option>
+								<option value="lotC">Lot C</option>
+								<option value="lotD">Lot D</option>
+							</select>
+						</th>
+						<!-- *************************     remove onchange=FuncDisabled() add name and value-->
+						<th class="instruction"><input type="checkbox" id="handicaped" name="handicaped" value="handicaped"> Handicapped <br /> (Lot D is for disabled)</th>
+						<!-- *************************     remove onchange=FuncDisabled() add name and value-->
+					<tr>
+					<!-- ****************************-->
+						<td>
+									<p id="a_capacity"><span id="a_counter"></span></p>
+						</td>
+						<td>
+							        <p id="b_capacity"><span id="b_counter"></span></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							        <p id="c_capacity"><span id="c_counter"></span></p>
+						</td>
+						<td>
+							        <p id="d_capacity"><span id="d_counter"></span></p>
+						</td>
+					</tr>
+					<tr>
+						<th colspan="2">
+							<button id="send_button" type="button" value="send" onclick="FuncReserve()">Reserve Parking</button>&nbsp
+							<button id="remove_button" type="button" value="remove" onclick="FuncCheckout()">Remove Reservation</button>&nbsp
+							<button id="clean_button" type="button" value="cleanForm" onclick="cleanForm()">Clear Form</button>&nbsp
+						</th>
+					</tr>
+					</form>
+				</table>
+			<th>
+				<iframe src="https://www.radio-head.co.il/include/player.aspx?extra=yes&name=glgltz" id="radio_box" frameborder="0" style="width:300px;height:300px"></iframe>
+				<a href="https://www.radio-head.co.il/" target="_blank" style="text-decoration:underline;display:block">לכל תחנות הרדיו >></a>
+			</th>
+			<th id="weather_table">
+				<!-- weather2day.co.il embed code -->
+				<iframe src="https://www.weather2day.co.il/widget/forecast/10008" scrolling="no" width="250" height="240"></iframe>
+				<!-- weather2day.co.il embed code -->
+			</th>
+	</table>
+	<footer>
+		<!-- © = &copy-->
+		<p>&copy 2024 Braude College Parking Reservation</p>
+	</footer>
+
+</body>
+</html>
